@@ -1,0 +1,21 @@
+package com.company;
+import java.util.Scanner;
+public class lapt_12_labexp19 {
+    public static void main(String[] args) {
+
+       input:this is my pen
+       output:thisismypenpen
+        Scanner sc = new Scanner(System.in);
+        String str, wd = "";
+       System.out.println("Enter a String:");
+       str = sc.nextLine();
+////        System.out.println(str.length());
+        int len = str.length();
+        for (int i = 0; i <len ;i++) {
+           char ch=str.charAt(i);
+            if (ch != ' ') {
+               System.out.print(ch);
+           }
+       }
+    }
+}
